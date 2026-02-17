@@ -1,3 +1,5 @@
+import streamlit as st
+
 def calculate_ticket(age, is_member, seat_type):
     base_price = 15
     show_time = "Evening"
@@ -41,3 +43,4 @@ if st.button("Calculate"):
         st.write(m)
 
     st.success(f"Total price: ${total}")
+
