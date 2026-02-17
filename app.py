@@ -29,7 +29,7 @@ def calculate_ticket(age, is_member, seat_type):
     return total, messages
 
 
-st.title("Movie Ticket Calculator")
+set.title("Movie Ticket Calculator")
 
 age = st.number_input("Age", min_value=1, max_value=100)
 is_member = st.checkbox("Are you a member?")
@@ -39,4 +39,5 @@ if st.button("Calculate"):
     total, messages = calculate_ticket(age, is_member, seat_type)
     for m in messages:
         st.write(m)
+
     st.success(f"Total price: ${total}")
